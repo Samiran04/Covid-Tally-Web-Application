@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Tally</title>
+    </head>
+    <body>
+        <% if(locals.district){ %>
+            <h1><%= locals.state %></h1>
+            <h3><%= locals.district_name %></h3>
+            <p><b>Active:</b> <%= district.active %></p>
+            <p><b>Confirmed:</b> <%= district.confirmed %></p>
+            <p><b>Deceased:</b> <%= district.deceased %></p>
+            <p><b>Recovered:</b> <%= district.recovered %></p>
+        <% } %>
+    </body>
+</html>
